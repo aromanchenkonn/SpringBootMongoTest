@@ -1,0 +1,8 @@
+# ignore user files
+readme.txt
+*.log
+*.log.1
+*.log.lck
+# IntellijIdea files
+.idea
+/target/
