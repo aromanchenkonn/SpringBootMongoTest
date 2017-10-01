@@ -96,6 +96,18 @@
 
         </dependency>
 
+        <!--
+            для работы с шифрованым трафиком (gzip)
+            неподходит стандартный RestTemplate,
+            необходима библиотека org.apache.httpcomponents,
+            чтобы сделать дешифровку для дальнейшего использования
+            в теле JSON response body.
+        -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
